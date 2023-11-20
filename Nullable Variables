@@ -1,0 +1,27 @@
+void main() {
+  saudacoes('Pedro');
+  
+}
+
+void saudacoes(
+  String nome, {
+  bool mostraragora = true,
+  
+  String? cliente,
+}) {
+  print('-' * 20);
+  print('Saudações do $nome');
+  
+  if(cliente != null) {
+    print('seja bem vindo(a), $cliente!');
+  }
+  
+  if (mostraragora) {
+    print('Agora: ${agora()}');
+  }
+}
+
+String agora() {
+  DateTime agora = DateTime.now();
+  return agora.toString();
+}
